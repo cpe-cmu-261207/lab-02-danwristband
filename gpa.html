@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>gpa</title>
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <style>
+        .bottonz {
+            box-sizing: border-box;
+            margin: 0;
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    
+    <div>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                &nbsp; &nbsp;
+                <img src="https://scontent.fbkk12-2.fna.fbcdn.net/v/t1.0-9/70588632_2265923173518218_6456806824942239744_o.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeEbzbnjQba8SJCcbbsl-bTV3AJdT2IfLF_cAl1PYh8sX5Bam4GnQjQC72jktR_xtEObl0detxx4Ws3N3wpxLiL4&_nc_ohc=ynXWBLaEnHcAX_36n_b&_nc_ht=scontent.fbkk12-2.fna&oh=d84856914a8a10695b0d6d5e7aa47bb1&oe=5FFB1704"
+                    width="30" height="30" class="d-inline-block align-top" alt=""> &nbsp;
+                Grade Calculator
+            </a>
+        </nav>
+    </div>
+
+    <p>
+    <div class="container">
+        <div class="row row-cols-5">
+            <div class="col"> <label for="exampleFormControlInput1" class="form-label">TERM</label>
+
+                <select id="Term" name="Term" class="form-select form-select-sm" aria-label=".form-select-sm example">
+
+                
+                    <option value="1/62">ภาคการศึกษาที่ 1/2562</option>
+                    <option value="2/62">ภาคการศึกษาที่ 2/2562</option>
+                    <option value="1/63">ภาคการศึกษาที่ 1/2563</option>
+                    <option value="2/63">ภาคการศึกษาที่ 2/2563</option>
+                    <option value="1/64">ภาคการศึกษาที่ 1/2564</option>
+                    <option value="2/64">ภาคการศึกษาที่ 2/2564</option>
+                    <option value="1/65">ภาคการศึกษาที่ 1/2565</option>
+                    <option value="2/65">ภาคการศึกษาที่ 2/2565</option>
+                </select>
+
+
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">COURSE NO</label>
+                    <input type="number" class="form-control" name="course" id="course" placeholder="Enter your course">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">TITLE</label>
+                    <input type="string" class="form-control" name="title" id="title" placeholder="Enter Title">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">CREDIT</label>
+                    <input type="number" class="form-control" name="credit" id="credit" placeholder="Enter credit">
+                </div>
+            </div>
+
+            <div class="col">
+                <label for="exampleFormControlInput1" class="form-label">
+                    GRADE</label>
+                <select name="grade" id="grade" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>GRADE</option>
+                    <option value="4">A</option>
+                    <option value="3.5">B+</option>
+                    <option value="3">B</option>
+                    <option value="2.5">C+</option>
+                    <option value="2">C</option>
+                    <option value="1.5">D+</option>
+                    <option value="1">D</option>
+                    <option value="0">F</option>
+                    <option value="0">W</option>
+
+                </select>
+
+
+            </div>
+        </div>
+    </div>
+    </p>
+
+    <p>
+    <div id="bot" class="bottonz">
+        <button type="button" class="btn btn-info btn-lg" onclick="addHtmlTableRow();">Add</button>
+        <button type="button" class="btn btn-danger btn-lg" onclick="removeSelectedRow();">SelectToRemove</button>
+        <button type="button" class="btn btn-primary btn-lg" onclick="sumpointGrade(arrCredit,arrGrade);" >Start to calculate</button>
+        <button type="button" class="btn btn-secondary btn-lg" > <a href="gpa.html" style="color: aliceblue;">Reset </a></button>
+    </div>
+    </p>
+
+    <div class="container">
+        <div class="tab tab-1">
+            <table id="table" class="table">
+                <tr>
+                    <th>TERM</th>
+                    <th>COURSE NO</th>
+                    <th>TITLE</th>
+                    <th>CREDIT</th>
+                    <th>GRADE</th>
+                </tr>
+
+
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    
+
+
+
+
+    <script type='text/javascript' src='C:\Users\DANWRISTBAND\Desktop\scr.js'></script>
+</body>
+
+</html>
