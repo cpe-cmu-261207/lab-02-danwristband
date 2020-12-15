@@ -73,3 +73,7 @@ html,body{
     font-family:'Courier New', Courier, monospace;
     
 }
+.box{
+    max-width: 700p;
+    margin: auto;
+}
