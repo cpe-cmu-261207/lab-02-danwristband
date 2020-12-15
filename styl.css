@@ -1,0 +1,75 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+.gallory{
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+.contact{
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+
+.profile {
+    width: 100%;
+    min-width: 50%;
+}
+.gpa{
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+
+.PICHEAD{
+    position: absolute;
+    top : 10px;
+    left: 10px;
+    
+}
+
+.menu{
+    
+    padding: 0px;
+    text-align: center;
+    
+} 
+
+
+
+.header{
+    background-color:rgb(106, 164, 184);
+    margin: 0px ;
+    padding: 15px;
+    
+}
+.personal{
+    min-width: 30%;
+    color: rgb(116, 113, 113);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    margin: 3%;
+    position: relative;
+    font-size: 25px;
+    font-weight:100;
+    font-family:'Courier New', Courier, monospace;
+    
+}
